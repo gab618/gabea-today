@@ -4,7 +4,7 @@ import { Container, Content, Footer } from './styles';
 
 function Main() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
-  const [firstDay, setFirstDay] = useState(new Date(2020, 8, 2));
+  const [firstDay] = useState(new Date(2020, 8, 2));
   const [seconds, setSeconds] = useState(0);
   const [days, setDays] = useState(0);
 

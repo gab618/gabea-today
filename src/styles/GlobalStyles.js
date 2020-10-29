@@ -18,6 +18,6 @@ export default createGlobalStyle`
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   html {
-    background: #FF3F3E;
+    background: radial-gradient(50% 50% at 50% 50%, #E4546F 0%, #AD2746 100%);
   }
 `;
