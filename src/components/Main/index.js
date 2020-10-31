@@ -28,7 +28,7 @@ function Main() {
           <span>Hoje faz </span> <strong>{days} dias</strong>
           <span> que GaBea é real</span>
         </h1>
-        <h2>Mais precisamente {seconds} segundos de puro amor</h2>
+        <h2>Mais precisamente {seconds} segundos de muito amor</h2>
       </Content>
       <Footer>
         <p>
