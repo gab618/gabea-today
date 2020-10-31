@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { differenceInDays, differenceInSeconds } from 'date-fns';
 import { Container, Content, Footer } from './styles';
+import { MdFavorite } from 'react-icons/md';
 
 function Main() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -27,14 +28,19 @@ function Main() {
           <span>Hoje faz </span> <strong>{days} dias</strong>
           <span> que GaBea é real</span>
         </h1>
-        <h2>Mais precisamente {seconds} segundos</h2>
+        <h2>Mais precisamente {seconds} segundos de puro amor</h2>
       </Content>
       <Footer>
         <p>
-          Made with <span>💜</span> by{' '}
-          <a href="https://twitter.com/ezrealblindado">Gabriel</a>{' '}
-          <span>🦔</span> · For{' '}
-          <a href="https://twitter.com/beascoitinho">Beatriz</a> <span>🍪</span>
+          Made with
+          <MdFavorite /> by{' '}
+          <a href="https://twitter.com/ezrealblindado">
+            Gabriel <span>🦔</span>
+          </a>{' '}
+          · Dedicated to{' '}
+          <a href="https://twitter.com/beascoitinho">
+            Beatriz <span>🍪</span>
+          </a>{' '}
         </p>
       </Footer>
     </Container>
