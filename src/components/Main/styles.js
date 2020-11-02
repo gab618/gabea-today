@@ -18,6 +18,7 @@ export const Container = styled.div`
   color: #fff;
   text-align: center;
   padding: 0 16px;
+  position: relative;
 `;
 
 export const Content = styled.header`

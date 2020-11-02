@@ -1,13 +1,21 @@
 import { useEffect, useState } from 'react';
-import { differenceInDays, differenceInSeconds } from 'date-fns';
+import {
+  differenceInDays,
+  differenceInMonths,
+  differenceInSeconds,
+  getDate,
+} from 'date-fns';
 import { Container, Content, Footer } from './styles';
 import { MdFavorite } from 'react-icons/md';
+import Mensiversary from '../Mensiversary';
 
 function Main() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
   const [firstDay] = useState(new Date(2020, 8, 2));
   const [seconds, setSeconds] = useState(0);
   const [days, setDays] = useState(0);
+  const [months, setMonths] = useState(0);
+  const [dayOfMonth, setDayOfMonth] = useState(0);
 
   useEffect(() => {
     const id = setInterval(() => setCurrentDateTime(new Date()), 1000);
@@ -19,10 +27,13 @@ function Main() {
   useEffect(() => {
     setSeconds(differenceInSeconds(currentDateTime, firstDay));
     setDays(differenceInDays(currentDateTime, firstDay));
+    setMonths(differenceInMonths(currentDateTime, firstDay));
+    setDayOfMonth(getDate(currentDateTime));
   }, [currentDateTime, firstDay]);
 
   return (
     <Container>
+      {dayOfMonth === 2 && <Mensiversary mensiversaryDay={months} />}
       <Content>
         <h1>
           <span>Hoje faz </span> <strong>{days} dias</strong>
