@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/gab618/gabea-today">
+    <img src="https://abs-0.twimg.com/emoji/v2/svg/2764.svg" alt="Logo" width="80" height="80">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1 align="center">GaBea Today</h1>
 
-## Available Scripts
+  <p align="center">
+    Contador de dias e de segundos do meu namoro
+    <br />
+    <a href="https://github.com/gab618/gabea-today"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://www.gabea.today/">Site</a>
+    ·
+    <a href="https://github.com/gab618/gabea-today/issues">Reportar Bug</a>
+    ·
+    <a href="https://github.com/gab618/gabea-today/issues">Sugestões</a>
+  </p>
+</p>
 
-In the project directory, you can run:
+<br />
+<p align="center">
+  <a href="https://www.gabea.today/">
+    <img src="https://media.giphy.com/media/qMG6sdiWwAvRNNAWy7/giphy.gif" alt="Logo" >
+  </a>
+  <br />
+  <span>Preview: Aniversário de 2 meses</span>
+</p>
 
-### `yarn start`
+### Techs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React,js
+- Styled Components
+- date-fns
+- react-confetti
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Objetivos do estudo
 
-### `yarn test`
+- [x] Demonstrar o meu amor
+- [x] Praticar layouts responsivos
+- [x] Praticar manipulação de datas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `yarn build`
+1. Run `npm install` or `yarn install`.<br />
+2. Run `yarn start` and access `http://localhost:3000`.<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- USAGE EXAMPLES -->
+<!-- ## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-### `yarn eject`
+<!-- CONTRIBUTING -->
+<!-- ## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- LICENSE -->
+<!-- ## License
+Distributed under the MIT License. See `LICENSE` for more information. -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- CONTACT -->
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Gabriel - [@ezrealblindado](https://twitter.com/ezrealblindado) - gabrielrocha1997@gmail.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
