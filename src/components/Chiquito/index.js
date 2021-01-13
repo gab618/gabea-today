@@ -9,7 +9,7 @@ import { Content } from './styles';
 import Mensiversary from '../Mensiversary';
 import BaseLayout from '../BaseLayout';
 
-function Main() {
+function Chiquito() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
   const [firstDay] = useState(new Date(2020, 8, 2));
   const [seconds, setSeconds] = useState(0);
@@ -37,16 +37,16 @@ function Main() {
       <Content>
         <h1>
           <span>Hoje faz </span> <strong>{days} dias</strong>
-          <span> que GaBea é real</span>
+          <span> que Chiquito está entre nós</span>
         </h1>
         <h2>
           Mais precisamente{' '}
           {Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(seconds)}{' '}
-          segundos de muito amor
+          segundos de existência
         </h2>
       </Content>
     </BaseLayout>
   );
 }
 
-export default Main;
+export default Chiquito;
