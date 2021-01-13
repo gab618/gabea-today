@@ -1,13 +1,7 @@
-import Main from './components/Main';
-import GlobalStyles from './styles/GlobalStyles';
+import Routes from './routes';
 
 function App() {
-  return (
-    <>
-      <Main />
-      <GlobalStyles />
-    </>
-  );
+  return <Routes />;
 }
 
 export default App;
