@@ -1,5 +1,6 @@
 import { Container, Footer } from './styles';
 import { MdFavorite } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 function BaseLayout({ children }) {
   return (
@@ -10,10 +11,13 @@ function BaseLayout({ children }) {
           Made with
           <MdFavorite /> by{' '}
           <a href="https://twitter.com/ezrealblindado">
-            Gabriel <span>🦔</span>
-          </a>{' '}
+            Gabriel
+            <Link to="/chiquito">
+              <span>🦔</span>
+            </Link>
+          </a>
           · Dedicated to{' '}
-          <a href="https://twitter.com/beascoitinho">
+          <a href="https://twitter.com/beascoitinho" target="_blank">
             Beatriz <span>🍪</span>
           </a>{' '}
         </p>
