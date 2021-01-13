@@ -17,7 +17,11 @@ function BaseLayout({ children }) {
             </Link>
           </a>
           · Dedicated to{' '}
-          <a href="https://twitter.com/beascoitinho" target="_blank">
+          <a
+            href="https://twitter.com/beascoitinho"
+            target="_blank"
+            rel="noreferrer"
+          >
             Beatriz <span>🍪</span>
           </a>{' '}
         </p>
