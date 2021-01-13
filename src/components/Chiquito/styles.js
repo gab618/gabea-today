@@ -10,6 +10,7 @@ export const Content = styled.header`
   h1 {
     font-size: 64px;
     font-weight: 400;
+    margin-bottom: 32px;
 
     strong {
       font-size: 80px;
@@ -27,7 +28,12 @@ export const Content = styled.header`
     h1 {
       display: flex;
       flex-direction: column;
-      font-size: 40px;
+      font-size: 36px;
+      strong {
+        font-size: 64px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
     }
 
     h2 {
