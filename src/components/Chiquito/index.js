@@ -50,7 +50,6 @@ function Chiquito() {
   }, [currentDateTime, firstDay]);
 
   function handleHedgehogClick() {
-    console.log(clicksCount);
     setClicksCount(clicksCount + 1);
   }
 
