@@ -27,11 +27,14 @@ export const Footer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 
   a {
     text-decoration: none;
     color: #fff;
     margin: 0 3px;
+    display: flex;
+    align-items: center;
   }
 
   p {

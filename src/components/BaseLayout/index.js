@@ -9,13 +9,13 @@ function BaseLayout({ children }) {
       <Footer>
         <p>
           Made with
-          <MdFavorite /> by{' '}
-          <a href="https://twitter.com/ezrealblindado">
-            Gabriel
-            <Link to="/chiquito">
-              <span>🦔</span>
-            </Link>
-          </a>
+          <Link to="/">
+            <MdFavorite />
+          </Link>{' '}
+          by <a href="https://twitter.com/ezrealblindado">Gabriel</a>
+          <Link to="/chiquito">
+            <span>🦔</span>
+          </Link>
           · Dedicated to{' '}
           <a
             href="https://twitter.com/beascoitinho"
