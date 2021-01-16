@@ -41,3 +41,14 @@ export const Content = styled.header`
     }
   }
 `;
+
+export const ChiquitoContainer = styled.div`
+  position: relative;
+
+  > span {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+  }
+`;

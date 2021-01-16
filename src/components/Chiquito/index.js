@@ -6,11 +6,12 @@ import {
   getDate,
 } from 'date-fns';
 import useWindowSize from 'react-use/lib/useWindowSize';
-import { Content } from './styles';
+import { Content, ChiquitoContainer } from './styles';
 import Mensiversary from '../Mensiversary';
 import BaseLayout from '../BaseLayout';
 import Lottie from 'react-lottie';
-import animationData from '../../lotties/hedgehog-sleeping.json';
+import hedgehogData from '../../lotties/hedgehog-sleeping.json';
+import eyesData from '../../lotties/eyes.json';
 
 function Chiquito() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -19,17 +20,20 @@ function Chiquito() {
   const [days, setDays] = useState(0);
   const [months, setMonths] = useState(0);
   const [dayOfMonth, setDayOfMonth] = useState(0);
+  const [clicksCount, setClicksCount] = useState(0);
 
   const { height } = useWindowSize();
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
+  function options(data) {
+    return {
+      loop: true,
+      autoplay: true,
+      animationData: data,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice',
+      },
+    };
+  }
 
   useEffect(() => {
     const id = setInterval(() => setCurrentDateTime(new Date()), 1000);
@@ -45,6 +49,11 @@ function Chiquito() {
     setDayOfMonth(getDate(currentDateTime));
   }, [currentDateTime, firstDay]);
 
+  function handleHedgehogClick() {
+    console.log(clicksCount);
+    setClicksCount(clicksCount + 1);
+  }
+
   return (
     <BaseLayout>
       {dayOfMonth === 2 && <Mensiversary mensiversaryDay={months} />}
@@ -53,14 +62,27 @@ function Chiquito() {
           <span>Hoje faz </span> <strong>{days} dias</strong>
           <span> que Chiquito está entre nós</span>
         </h1>
-        <Lottie
-          options={defaultOptions}
-          height={height / 2.5}
-          width={height / 2.5}
-          isStopped={false}
-          isPaused={false}
-          speed={0.6}
-        />
+
+        <ChiquitoContainer onClick={handleHedgehogClick}>
+          <Lottie
+            options={options(hedgehogData)}
+            height={height / 2.5}
+            width={height / 2.5}
+            isStopped={false}
+            isPaused={false}
+            speed={0.6}
+          />
+          <span winner={clicksCount > 2 ? 1 : 0}>
+            <Lottie
+              options={options(eyesData)}
+              height={clicksCount >= 10 ? height / 12.5 : 0}
+              width={height / 7.5}
+              isStopped={false}
+              isPaused={false}
+              speed={1}
+            />
+          </span>
+        </ChiquitoContainer>
         <h2>
           Mais precisamente{' '}
           {Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(seconds)}{' '}
