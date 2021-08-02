@@ -3,6 +3,7 @@ import {
   differenceInDays,
   differenceInMonths,
   differenceInSeconds,
+  differenceInYears,
   getDate,
 } from 'date-fns';
 import { Content } from './styles';
@@ -15,6 +16,7 @@ function Main() {
   const [seconds, setSeconds] = useState(0);
   const [days, setDays] = useState(0);
   const [months, setMonths] = useState(0);
+  const [years, setYears] = useState(0);
   const [dayOfMonth, setDayOfMonth] = useState(0);
 
   useEffect(() => {
@@ -28,12 +30,13 @@ function Main() {
     setSeconds(differenceInSeconds(currentDateTime, firstDay));
     setDays(differenceInDays(currentDateTime, firstDay));
     setMonths(differenceInMonths(currentDateTime, firstDay));
+    setYears(differenceInYears(currentDateTime, firstDay));
     setDayOfMonth(getDate(currentDateTime));
   }, [currentDateTime, firstDay]);
 
   return (
     <BaseLayout>
-      {dayOfMonth === 2 && <Mensiversary mensiversaryDay={months} />}
+      {dayOfMonth === 2 && <Mensiversary months={months} years={years} />}
       <Content>
         <h1>
           <span>Hoje faz </span> <strong>{days} dias</strong>
